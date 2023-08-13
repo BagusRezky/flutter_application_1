@@ -1,6 +1,7 @@
 # flutter_application_1
 
 A new Flutter project.
+In this Repo i try learn flutter about slicing for figma to mobile app
 
 ## Getting Started
 
