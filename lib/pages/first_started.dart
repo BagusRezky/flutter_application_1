@@ -16,6 +16,36 @@ class FirstStarted extends StatelessWidget {
               ),
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.only(top: 527.0, left: 83, right: 30),
+            child: Text(
+              'Maximize Revenue',
+              style: GoogleFonts.poppins(
+                color: Colors.white,
+                fontSize: 22,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 560.0, left: 52, right: 36),
+            child: Text(
+              'Gain more profit from cryptocurrency \nwithout any risk involved',
+              style: GoogleFonts.poppins(
+                color: Colors.white,
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
+              ),
+              textAlign: TextAlign.center,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 630.0, left: 154, right: 50),
+            child: Image.asset(
+              'assets/button.png',
+              width: 60,
+            ),
+          ),
         ],
       ),
     );
