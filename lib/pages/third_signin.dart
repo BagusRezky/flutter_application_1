@@ -41,6 +41,7 @@ class SignIn extends StatelessWidget {
             ),
             SizedBox(height: 20),
             TextFormField(
+              obscureText: true,
               style: GoogleFonts.poppins(color: Colors.white),
               decoration: InputDecoration(
                 fillColor: Color(0xff262A34),
@@ -67,6 +68,57 @@ class SignIn extends StatelessWidget {
                 style: GoogleFonts.poppins(
                   color: Color(0xff6A6B70),
                 ),
+              ),
+            ),
+            SizedBox(height: 117),
+            Center(
+              child: Container(
+                width: 295,
+                height: 55,
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: Color(0xffFCAC15),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(17),
+                    ),
+                  ),
+                  onPressed: () {},
+                  child: Text(
+                    'SignIn',
+                    style: GoogleFonts.openSans(
+                      color: Color(0xff6B4909),
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                left: 45.0,
+                top: 10,
+              ),
+              child: Row(
+                children: [
+                  Text(
+                    'Don`t have account?',
+                    style: GoogleFonts.poppins(
+                      color: Color(0xffFFFFFF),
+                      fontSize: 14,
+                    ),
+                  ),
+                  SizedBox(width: 4),
+                  Text(
+                    'SignUp',
+                    style: GoogleFonts.poppins(
+                      color: Colors.white,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w600,
+                      decoration: TextDecoration.underline,
+                    ),
+                  ),
+                ],
               ),
             ),
           ],
