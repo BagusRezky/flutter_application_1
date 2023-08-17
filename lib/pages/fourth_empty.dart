@@ -27,6 +27,23 @@ class Empty extends StatelessWidget {
               style: lightTextStyle,
               textAlign: TextAlign.center,
             ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              width: 200,
+              height: 50,
+              decoration: BoxDecoration(
+                color: Color(0xffF94593),
+                borderRadius: BorderRadius.circular(17),
+              ),
+              child: Align(
+                child: Text(
+                  'Done',
+                  style: buttonTextStyle,
+                ),
+              ),
+            ),
           ],
         ),
       ),
