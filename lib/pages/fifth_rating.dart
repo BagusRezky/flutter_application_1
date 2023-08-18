@@ -27,6 +27,41 @@ class rating extends StatelessWidget {
               '\$90.00',
               style: priceTextStyle,
             ),
+            SizedBox(height: 90),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Was it delicious?',
+                  style: askTextStyle,
+                ),
+                SizedBox(height: 20),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Image.asset(
+                      'assets/emojiFirst.png',
+                      width: 50,
+                    ),
+                    SizedBox(width: 20),
+                    Image.asset(
+                      'assets/emojiTwo.png',
+                      width: 50,
+                    ),
+                    SizedBox(width: 20),
+                    Image.asset(
+                      'assets/emojiThree.png',
+                      width: 50,
+                    ),
+                    SizedBox(width: 20),
+                    Image.asset(
+                      'assets/emojiFour.png',
+                      width: 50,
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ],
         ),
       ),
