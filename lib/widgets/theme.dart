@@ -18,3 +18,28 @@ TextStyle buttonTextStyle = GoogleFonts.poppins(
   fontSize: 18,
   fontWeight: FontWeight.w600,
 );
+
+//Day 5
+Color whiteColor = Color(0xffffffff);
+TextStyle titleTextStyle = GoogleFonts.poppins(
+  color : whiteColor,
+  fontSize: 24,
+  fontWeight: FontWeight.w600,
+);
+
+TextStyle priceTextStyle = GoogleFonts.poppins(
+  color: whiteColor,
+  fontSize: 24,
+);
+
+TextStyle askTextStyle = GoogleFonts.poppins(
+  color: whiteColor,
+  fontSize: 18,
+  fontWeight: FontWeight.w500,
+);
+
+TextStyle button2TextStyle = GoogleFonts.poppins(
+  color: whiteColor,
+  fontSize: 16,
+  fontWeight: FontWeight.w600,
+);
