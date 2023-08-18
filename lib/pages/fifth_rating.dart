@@ -62,6 +62,21 @@ class rating extends StatelessWidget {
                 ),
               ],
             ),
+            SizedBox(height: 60),
+            Container(
+              width: 211,
+              height: 55,
+              decoration: BoxDecoration(
+                color: Color(0xff34D186),
+                borderRadius: BorderRadius.circular(16),
+              ),
+              child: Align(
+                child: Text(
+                  'Rate Now',
+                  style: button2TextStyle,
+                ),
+              ),
+            ),
           ],
         ),
       ),
