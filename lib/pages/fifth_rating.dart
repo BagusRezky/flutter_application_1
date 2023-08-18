@@ -68,7 +68,7 @@ class rating extends StatelessWidget {
               height: 55,
               decoration: BoxDecoration(
                 color: Color(0xff34D186),
-                borderRadius: BorderRadius.circular(16),
+                borderRadius: BorderRadius.circular(60),
               ),
               child: Align(
                 child: Text(
