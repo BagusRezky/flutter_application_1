@@ -37,3 +37,9 @@ TextStyle askTextStyle = GoogleFonts.poppins(
   fontSize: 18,
   fontWeight: FontWeight.w500,
 );
+
+TextStyle button2TextStyle = GoogleFonts.poppins(
+  color: whiteColor,
+  fontSize: 16,
+  fontWeight: FontWeight.w600,
+);
