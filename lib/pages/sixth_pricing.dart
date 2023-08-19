@@ -4,8 +4,8 @@ import 'package:flutter_application_1/widgets/theme.dart';
 class pricing extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Padding(
+    Widget header() {
+      return Padding(
         padding: const EdgeInsets.only(top: 100.0, left: 30, right: 30),
         child: Column(
           children: [
@@ -23,6 +23,14 @@ class pricing extends StatelessWidget {
             ),
           ],
         ),
+      );
+    }
+
+    return Scaffold(
+      body: Column(
+        children: [
+          header(),
+        ],
       ),
     );
   }
