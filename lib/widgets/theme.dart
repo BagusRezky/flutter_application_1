@@ -22,7 +22,7 @@ TextStyle buttonTextStyle = GoogleFonts.poppins(
 //Day 5
 Color whiteColor = Color(0xffffffff);
 TextStyle titleTextStyle = GoogleFonts.poppins(
-  color : whiteColor,
+  color: whiteColor,
   fontSize: 24,
   fontWeight: FontWeight.w600,
 );
@@ -41,5 +41,13 @@ TextStyle askTextStyle = GoogleFonts.poppins(
 TextStyle button2TextStyle = GoogleFonts.poppins(
   color: whiteColor,
   fontSize: 16,
+  fontWeight: FontWeight.w600,
+);
+
+//Day 6
+Color black2Color = Color(0xff191919);
+TextStyle title2TextStyle = GoogleFonts.poppins(
+  color: black2Color,
+  fontSize: 22,
   fontWeight: FontWeight.w600,
 );
