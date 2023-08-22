@@ -2,7 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/widgets/theme.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class pricing extends StatelessWidget {
+class pricing extends StatefulWidget {
+  int selectedIndex = -1;
+  @override
+  State<pricing> createState() => _pricingState();
+}
+
+class _pricingState extends State<pricing> {
   @override
   Widget build(BuildContext context) {
     Widget header() {
@@ -27,62 +33,77 @@ class pricing extends StatelessWidget {
       );
     }
 
-    Widget option() {
-      return Container(
-        width: 315,
-        height: 100,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(60),
-          border: Border.all(
-            color: Color(0xffD9DEEA),
+    Widget option(
+      int index,
+      String imageUrl,
+      String title,
+      String description,
+      String subDescription,
+    ) {
+      return GestureDetector(
+        onTap: () {
+          setState(() {
+            widget.selectedIndex = index;
+          });
+        },
+        child: Container(
+          width: 315,
+          height: 100,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(60),
+            border: Border.all(
+              color: widget.selectedIndex == index
+                  ? Color(0xff6050E7)
+                  : Color(0xffD9DEEA),
+            ),
           ),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.only(top: 15.0, left: 17, bottom: 23),
-          child: Row(
-            children: [
-              Image.asset(
-                'assets/pigIcon.png',
-                width: 66,
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 10.0, left: 7),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Money Security',
-                      style: GoogleFonts.poppins(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w500,
-                        color: Color(0xff191919),
-                      ),
-                    ),
-                    Row(
-                      children: [
-                        Text(
-                          'support',
-                          style: GoogleFonts.poppins(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w300,
-                            color: Color(0xffA3A8B8),
-                          ),
-                        ),
-                        SizedBox(width: 5),
-                        Text(
-                          '24/7',
-                          style: GoogleFonts.poppins(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w500,
-                            color: Color(0xff5343C2),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
+          child: Padding(
+            padding: const EdgeInsets.only(top: 15.0, left: 17, bottom: 23),
+            child: Row(
+              children: [
+                Image.asset(
+                  imageUrl,
+                  width: 66,
                 ),
-              )
-            ],
+                Padding(
+                  padding: const EdgeInsets.only(top: 10.0, left: 7),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        title,
+                        style: GoogleFonts.poppins(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xff191919),
+                        ),
+                      ),
+                      Row(
+                        children: [
+                          Text(
+                            description,
+                            style: GoogleFonts.poppins(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w300,
+                              color: Color(0xffA3A8B8),
+                            ),
+                          ),
+                          SizedBox(width: 5),
+                          Text(
+                            subDescription,
+                            style: GoogleFonts.poppins(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w500,
+                              color: Color(0xff5343C2),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            ),
           ),
         ),
       );
@@ -94,7 +115,13 @@ class pricing extends StatelessWidget {
         children: [
           header(),
           SizedBox(height: 50),
-          option(),
+          option(0, 'assets/pigIcon.png', 'Money Security', 'support', '24/7'),
+          SizedBox(height: 24),
+          option(
+              1, 'assets/paperIcon.png', 'Automation', 'we provide', 'Invoice'),
+          SizedBox(height: 24),
+          option(
+              2, 'assets/moneyIcon.png', 'Balance Report', 'can up to', '10k'),
         ],
       ),
     );
