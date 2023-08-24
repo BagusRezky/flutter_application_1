@@ -127,7 +127,7 @@ class _pricingState extends State<pricing> {
       body: Column(
         children: [
           header(),
-          SizedBox(height: 50),
+          SizedBox(height: 30),
           option(0, 'assets/pigIcon.png', 'Money Security', 'support', '24/7'),
           SizedBox(height: 24),
           option(
