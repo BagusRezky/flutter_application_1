@@ -137,6 +137,39 @@ class _pricingState extends State<pricing> {
               2, 'assets/moneyIcon.png', 'Balance Report', 'can up to', '10k'),
         ],
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: Color(0xff6050E7),
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Padding(
+              padding: const EdgeInsets.only(
+                top: 15.0,
+                left: 30,
+              ),
+              child: Text(
+                'Upgrade Now',
+                style: GoogleFonts.poppins(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w600,
+                  color: Color(0xffFFFFFF),
+                ),
+              ),
+            ),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Padding(
+              padding: const EdgeInsets.only(top: 15.0, left: 70),
+              child: Image.asset(
+                'assets/rowIcon.png',
+                width: 24,
+              ),
+            ),
+            label: '',
+          ),
+        ],
+      ),
     );
   }
 }
