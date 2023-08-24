@@ -58,8 +58,10 @@ class _pricingState extends State<pricing> {
             ),
           ),
           child: Padding(
-            padding: const EdgeInsets.only(top: 15.0, left: 17, bottom: 23),
+            padding: const EdgeInsets.only(
+                top: 15.0, left: 17, bottom: 23, right: 23),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Image.asset(
                   imageUrl,
@@ -101,7 +103,14 @@ class _pricingState extends State<pricing> {
                       ),
                     ],
                   ),
-                )
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 41.0, top: 10),
+                  child: Image.asset(
+                    'assets/check.png',
+                    width: 26,
+                  ),
+                ),
               ],
             ),
           ),
