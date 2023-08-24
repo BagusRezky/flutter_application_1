@@ -106,10 +106,14 @@ class _pricingState extends State<pricing> {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 41.0, top: 10),
-                  child: Image.asset(
-                    'assets/check.png',
-                    width: 26,
-                  ),
+                  child: widget.selectedIndex == index
+                      ? Image.asset(
+                          'assets/check.png',
+                          width: 26,
+                        )
+                      : SizedBox(
+                          width: 26,
+                        ),
                 ),
               ],
             ),
