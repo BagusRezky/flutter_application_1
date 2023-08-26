@@ -33,29 +33,32 @@ class shopChart extends StatelessWidget {
               ),
               child: Row(
                 children: [
-                  Column(
-                    children: [
-                      Image.asset(
-                        'assets/burger.png',
-                        width: 80,
-                      ),
-                      SizedBox(height: 13),
-                      Row(
-                        children: [
-                          Image.asset(
-                            'assets/minus.png',
-                            width: 22,
-                          ),
-                          SizedBox(width: 8),
-                          Text('2'),
-                          SizedBox(width: 8),
-                          Image.asset(
-                            'assets/plus.png',
-                            width: 22,
-                          ),
-                        ],
-                      ),
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10.0, left: 10),
+                    child: Column(
+                      children: [
+                        Image.asset(
+                          'assets/burger.png',
+                          width: 80,
+                        ),
+                        SizedBox(height: 13),
+                        Row(
+                          children: [
+                            Image.asset(
+                              'assets/minus.png',
+                              width: 22,
+                            ),
+                            SizedBox(width: 8),
+                            Text('2'),
+                            SizedBox(width: 8),
+                            Image.asset(
+                              'assets/plus.png',
+                              width: 22,
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
