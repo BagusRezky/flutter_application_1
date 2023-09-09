@@ -14,7 +14,7 @@ class SevenDays extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: shopChart(),
+      home: pricing(),
     );
   }
 }
