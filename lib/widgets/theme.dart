@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-Color blackColor = Color(0xff0E1954);
+Color blackColor = const Color(0xff0E1954);
 TextStyle boldTextStyle = GoogleFonts.poppins(
   color: blackColor,
   fontSize: 24,
@@ -14,13 +14,13 @@ TextStyle lightTextStyle = GoogleFonts.poppins(
 );
 
 TextStyle buttonTextStyle = GoogleFonts.poppins(
-  color: Color(0xffF8F8F8),
+  color: const Color(0xffF8F8F8),
   fontSize: 18,
   fontWeight: FontWeight.w600,
 );
 
 //Day 5
-Color whiteColor = Color(0xffffffff);
+Color whiteColor = const Color(0xffffffff);
 TextStyle titleTextStyle = GoogleFonts.poppins(
   color: whiteColor,
   fontSize: 24,
@@ -45,7 +45,7 @@ TextStyle button2TextStyle = GoogleFonts.poppins(
 );
 
 //Day 6
-Color black2Color = Color(0xff191919);
+Color black2Color = const Color(0xff191919);
 TextStyle title2TextStyle = GoogleFonts.poppins(
   color: black2Color,
   fontSize: 22,
