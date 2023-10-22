@@ -4,6 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 class pricing extends StatefulWidget {
   int selectedIndex = -1;
+
+  pricing({super.key});
   @override
   State<pricing> createState() => _pricingState();
 }
@@ -22,7 +24,7 @@ class _pricingState extends State<pricing> {
                 width: 100,
               ),
             ),
-            SizedBox(height: 48),
+            const SizedBox(height: 48),
             Text(
               'Which one you wish \nto Upgrade?',
               style: title2TextStyle,
@@ -53,8 +55,8 @@ class _pricingState extends State<pricing> {
             borderRadius: BorderRadius.circular(60),
             border: Border.all(
               color: widget.selectedIndex == index
-                  ? Color(0xff6050E7)
-                  : Color(0xffD9DEEA),
+                  ? const Color(0xff6050E7)
+                  : const Color(0xffD9DEEA),
             ),
           ),
           child: Padding(
@@ -77,7 +79,7 @@ class _pricingState extends State<pricing> {
                         style: GoogleFonts.poppins(
                           fontSize: 16,
                           fontWeight: FontWeight.w500,
-                          color: Color(0xff191919),
+                          color: const Color(0xff191919),
                         ),
                       ),
                       Row(
@@ -87,16 +89,16 @@ class _pricingState extends State<pricing> {
                             style: GoogleFonts.poppins(
                               fontSize: 14,
                               fontWeight: FontWeight.w300,
-                              color: Color(0xffA3A8B8),
+                              color: const Color(0xffA3A8B8),
                             ),
                           ),
-                          SizedBox(width: 5),
+                          const SizedBox(width: 5),
                           Text(
                             subDescription,
                             style: GoogleFonts.poppins(
                               fontSize: 14,
                               fontWeight: FontWeight.w500,
-                              color: Color(0xff5343C2),
+                              color: const Color(0xff5343C2),
                             ),
                           ),
                         ],
@@ -111,7 +113,7 @@ class _pricingState extends State<pricing> {
                           'assets/check.png',
                           width: 26,
                         )
-                      : SizedBox(
+                      : const SizedBox(
                           width: 26,
                         ),
                 ),
@@ -123,23 +125,23 @@ class _pricingState extends State<pricing> {
     }
 
     return Scaffold(
-      backgroundColor: Color(0xffffffff),
+      backgroundColor: const Color(0xffffffff),
       body: Column(
         children: [
           header(),
-          SizedBox(height: 30),
+          const SizedBox(height: 30),
           option(0, 'assets/pigIcon.png', 'Money Security', 'support', '24/7'),
-          SizedBox(height: 24),
+          const SizedBox(height: 24),
           option(
               1, 'assets/paperIcon.png', 'Automation', 'we provide', 'Invoice'),
-          SizedBox(height: 24),
+          const SizedBox(height: 24),
           option(
               2, 'assets/moneyIcon.png', 'Balance Report', 'can up to', '10k'),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        backgroundColor: Color(0xff6050E7),
+        backgroundColor: const Color(0xff6050E7),
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Padding(
@@ -152,7 +154,7 @@ class _pricingState extends State<pricing> {
                 style: GoogleFonts.poppins(
                   fontSize: 18,
                   fontWeight: FontWeight.w600,
-                  color: Color(0xffFFFFFF),
+                  color: const Color(0xffFFFFFF),
                 ),
               ),
             ),
